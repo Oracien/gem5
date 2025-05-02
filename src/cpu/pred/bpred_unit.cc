@@ -276,6 +276,7 @@ BPredUnit::predict(const StaticInstPtr &inst, const InstSeqNum &seqNum,
                     "[tid:%i, sn:%llu] PC:%#x no indirect target\n",
                     tid, seqNum, pc.instAddr());
         }
+        delete(itarget);
     }
 
 
